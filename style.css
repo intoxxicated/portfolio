@@ -1289,7 +1289,6 @@ noscript{
 
 /* education begins */
 
-
 .education-section-container{
     margin: 150px 0;
     display: flex;
@@ -1383,7 +1382,14 @@ noscript{
     gap: 20px;
     padding: 0 40px;
 }
-
+.faviconforeducation{
+    background-color: white;
+    width: 20px;
+    border-radius: 50%;
+}
+.faviconforeducationAquaregia{
+    width: 20px;
+}
 .image-div{
     width: 50%;
     height: 100%;
@@ -1406,11 +1412,83 @@ noscript{
     font-size: 1.7rem;
     font-weight: 400;
 }
-
+/* Project visit button */
+.cta {
+    position: relative;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    /* cursor: url('click.png');
+    cursor: url('click.png'),
+    url('click.png');
+    cursor: url('click.png'),
+    move;
+        cursor: url('click.png')10 12; */
+   }
+   
+   .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    /* background: #b1dae7; */
+    background-color: var(--color-navbarBorder-dark);
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+   }
+   
+   .cta span {
+    position: relative;
+    /* font-family: "Ubuntu", sans-serif; */
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    /* color: #234567; */
+    color: var(--color-light-blue);
+   }
+   
+   .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    /* stroke: #234567; */
+    stroke: var(--color-light-blue);
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+   }
+   
+   .cta:hover:before {
+    width: 100%;
+    /* background: #b1dae7; */
+   }
+   .cta:hover span{
+    color:white;
+   }
+   .cta:hover svg{
+    stroke:white;
+   }
+   
+   .cta:hover svg {
+    transform: translateX(0);
+   }
+   
+   .cta:active {
+    transform: scale(0.95);
+   }
+/* Project visit button */
 .education-box:hover{
     transform: translate(-5px,-10px);
     transition-duration: .3s;
 }
+
 
 /* education ends */
 
