@@ -1398,11 +1398,13 @@ noscript{
     padding-left: 10px;
 }
 .image-div img{
-    height: 100%;
+    padding-top: 10%;
+    height: 80%;
     /* border-top-left-radius:10px ; */
    
 }
 .educationHeading{
+    padding-top: 10%;
     color: var(--color-white);
     font-size: 3.4rem;
     font-weight: 700;
@@ -1489,6 +1491,28 @@ noscript{
     transition-duration: .3s;
 }
 
+
+
+@media only screen and (max-width: 768px) {
+    .education-section-div {
+        width: 80%; /* Adjust the width for smaller screens */
+    }
+
+    .education-box {
+        flex-direction: column; /* Stack boxes vertically on smaller screens */
+        height: auto; /* Adjust height based on content */
+    }
+
+    .info-div, .image-div {
+        width: 100%; /* Full width for both info and image div on smaller screens */
+        padding: 20px; /* Adjust padding for better spacing on smaller screens */
+    }
+
+    .image-div img {
+        width: 100%; /* Make the image fill the container */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
 
 /* education ends */
 
